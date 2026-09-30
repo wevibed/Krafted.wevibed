@@ -45,9 +45,13 @@ function App() {
               MAKE AN APPOINTMENT <ArrowRight size={15}/>
             </a>
           </div>
-          <div className="hero-image">
-            <img src="/images/hero-krafted.webp" alt="Krafted Suits ZW editorial hero" fetchPriority="high" />
-          </div>
+         <div className="hero-image">
+  <img
+    src="/images/krafted-hero-photo-only.webp"
+    alt="Krafted Suits ZW"
+    fetchPriority="high"
+  />
+</div>
         </section>
 
         <section className="intro">
