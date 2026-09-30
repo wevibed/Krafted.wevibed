@@ -1,7 +1,0 @@
-const images=[
-['Screenshot 2026-09-30 103311.webp','Custom suiting'],['Screenshot 2026-09-30 103300.webp','Tailored looks'],['Screenshot 2026-09-30 103323.webp','Occasion wear'],['Screenshot 2026-09-30 103306.webp','Formal tailoring'],['Screenshot 2026-09-30 103317.webp','Made to measure'],['Screenshot 2026-09-30 103242.webp','Signature style'],['Screenshot 2026-09-30 103249.webp','Krafted collection']
-];
-const gallery=document.getElementById('gallery');
-images.forEach((item,i)=>{const b=document.createElement('button');b.className=`tile tile-${i}`;b.innerHTML=`<img src="/public/images/${encodeURIComponent(item[0])}" alt="${item[1]}" loading="${i===0?'eager':'lazy'}"><span>${String(i+1).padStart(2,'0')} · ${item[1]}</span>`;b.onclick=()=>openBox(item);gallery.appendChild(b)});
-const nav=document.getElementById('nav');document.getElementById('menu').onclick=()=>nav.classList.toggle('open');nav.querySelectorAll('a').forEach(a=>a.onclick=()=>nav.classList.remove('open'));
-const box=document.getElementById('lightbox'), img=document.getElementById('lightbox-img'), label=document.getElementById('lightbox-label');function openBox(item){img.src='/public/images/'+encodeURIComponent(item[0]);img.alt=item[1];label.textContent=item[1];box.hidden=false}function closeBox(){box.hidden=true}document.getElementById('close').onclick=closeBox;box.onclick=e=>{if(e.target===box)closeBox()};document.addEventListener('keydown',e=>{if(e.key==='Escape')closeBox()});
