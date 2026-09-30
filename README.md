@@ -1,12 +1,17 @@
 # Krafted Suits ZW
 
-Production-ready React + Vite website for Krafted Suits ZW.
+Premium responsive website for Krafted Suits ZW.
 
-Business information used:
-- Custom Made Men's Suiting
+Business details sourced from the supplied page:
+- Custom-made men's suiting
 - Avenues, Cnr 4th & Tongogara, Harare, Zimbabwe
-- Phone / WhatsApp: +263 78 088 0538
+- Call / WhatsApp: +263 78 088 0538
 
-The project root is deployment-ready for Cloudflare Pages.
-Build command: npm run build
-Output directory: dist
+## Deploy
+npm install
+npm run build
+
+Cloudflare Pages:
+- Build command: npm run build
+- Output directory: dist
+- Root directory: /
